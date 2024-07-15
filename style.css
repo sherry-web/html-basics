@@ -70,3 +70,18 @@ label, input {
         font-size: 0.9rem;
     }
 }
+
+/* Bootstrap specific overrides and additional styles */
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+/* Image responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
