@@ -113,3 +113,33 @@ img {
     border: 1px solid #ccc;
     padding: 20px;
 }
+
+
+/* Advanced Flexbox styles */
+.flex-container-advanced {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.flex-item-advanced {
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+/* Advanced CSS Grid styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
