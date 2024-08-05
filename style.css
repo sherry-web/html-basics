@@ -143,3 +143,23 @@ img {
     border: 1px solid #ccc;
     padding: 20px;
 }
+
+#api-content {
+    margin-top: 20px;
+}
+
+#fetch-user {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#user-details {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
