@@ -69,15 +69,11 @@ label, input {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
-}
 
-/* Bootstrap specific overrides and additional styles */
-.container {
-    margin-top: 20px;
-}
-
-.card {
-    margin-bottom: 20px;
+    .flex-item, .grid-item {
+        flex: 1 1 calc(50% - 20px);
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Image responsiveness */
@@ -101,20 +97,6 @@ img {
     box-sizing: border-box;
 }
 
-/* CSS Grid styles */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.grid-item {
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-
 /* Advanced Flexbox styles */
 .flex-container-advanced {
     display: flex;
@@ -131,7 +113,7 @@ img {
     box-sizing: border-box;
 }
 
-/* Advanced CSS Grid styles */
+/* CSS Grid styles */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -144,22 +126,41 @@ img {
     padding: 20px;
 }
 
+/* Specific styles for API content */
 #api-content {
     margin-top: 20px;
 }
 
-#fetch-user {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 20px;
+#user-details {
+    margin-top: 10px;
 }
 
-#user-details {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border: 1px solid #ccc;
+#user-details img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
     width: 100%;
+}
+
+/* Ensure the footer doesn't overlap content */
+main {
+    margin-bottom: 60px; 
+}
+
+/* Custom class names */
+.custom-container {
+    margin-top: 20px;
+}
+
+.custom-card {
+    margin-bottom: 20px;
 }
