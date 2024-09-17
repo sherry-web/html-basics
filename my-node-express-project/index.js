@@ -14,6 +14,12 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+// New Route: About Page with Dynamic Content
+app.get('/about', (req, res) => {
+  const projectDescription = "This project is aimed at learning Node.js and Express with EJS.";
+  res.render('about', { description: projectDescription });
+});
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
